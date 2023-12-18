@@ -1,0 +1,235 @@
+body{
+   background-color: rgb(9, 9, 14);
+   color: white;
+}
+.container{
+    margin: 100px 0px;
+    padding: 20px 20px;
+    background: linear-gradient(
+        to right,  rgb(45, 45, 70),  rgb(29, 29, 44), rgb(13, 13, 20) 
+    );
+    
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+}
+.name span:nth-of-type(1){
+    color: rgb(22, 98, 124);
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    position: relative;
+    left: -100px;
+    
+}
+.mainbody{
+    display: flex;
+    gap: 500px;
+}
+.text{
+    width: 130%;
+    position: relative;
+    left: 50px;
+}
+.text span{
+    color: rgb(22, 98, 124);
+    animation: anime 2s infinite;
+    font-weight: bolder;
+}
+@keyframes anime {
+    0%, 50%, 100%{
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0;
+    }
+}
+.text p:nth-of-type(3){
+    font-size: 13px;
+}
+button{
+    background-color: rgb(22, 98, 124);
+    animation: pulse 2s infinite;
+     
+}
+@keyframes pulse {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+img{
+    width:60%;
+    height: 85%;
+    border: 6px solid rgb(22, 98, 124);
+    border-radius: 70% ;
+    border: 6px solid rgb(22, 98, 124);
+    box-shadow: 0px 0px 35px rgb(22, 98, 124) ;
+    position: relative;
+    left: -100px;
+
+    animation: move 2s infinite;
+    
+}
+@keyframes move {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        background-color: rgb(9, 9, 14);
+        color: white;
+     }
+     .container{
+         margin: 100px 0px;
+         padding: 20px 20px;
+     }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .container{
+        margin: 100px 0px;
+        padding: 20px 20px;
+    }
+    .name{
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+        left: 20px;
+    }
+    .nav a{
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        position: relative;
+        left: 10px;
+    }
+    .text{
+        width: 150%;
+        position: relative;
+        left: 20px;
+        
+    }
+    .mainbody{
+        display: flex;
+        gap: 100px;
+    }
+    img{
+        width:60%;
+        height: 60%;
+        border: 6px solid rgb(22, 98, 124);
+        border-radius: 70% ;
+        border: 6px solid rgb(22, 98, 124);
+        box-shadow: 0px 0px 35px rgb(22, 98, 124) ;
+        position: relative;
+       top: 50px;
+       left: 70px;
+    
+        animation: move 2s infinite;
+        
+    }
+    .text span{
+        color: rgb(22, 98, 124);
+        animation: anime 2s infinite;
+        font-weight: bolder;
+        
+        font-size: 15px;
+    }
+    .text p:nth-of-type(2){
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px){
+    .name{
+        font-weight: bold;
+        font-size: 14px;
+        position: relative;
+        left: 20px;
+    }
+    .nav a{
+        text-decoration: none;
+        color: white;
+        padding: 1px;
+        position: relative;
+       left: 7px;
+       font-size: 14px;
+       bottom: 2px;
+    }
+    .text{
+        width: 150%;
+        position: relative;
+        left: 20px;
+        
+    }
+    .mainbody{
+        display: flex;
+        gap: 5px;
+    }
+    img{
+        width:40%;
+        height: 30%;
+        border: 6px solid rgb(22, 98, 124);
+        border-radius: 70% ;
+        border: 6px solid rgb(22, 98, 124);
+        box-shadow: 0px 0px 35px rgb(22, 98, 124) ;
+        position: relative;
+       top: 50px;
+       left: 100px;
+    
+        animation: move 2s infinite;
+        
+    }
+    .text span{
+        color: rgb(22, 98, 124);
+        animation: anime 2s infinite;
+        font-weight: bolder;
+        
+        font-size: 10px;
+    }
+    .text p:nth-of-type(2){
+        font-size: 10px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    .text p:nth-of-type(3){
+        font-size: 8px;
+        font-weight: bold;
+    }
+}
+@media screen and (min-width:700px){
+    img{
+        width:40%;
+        height: 60%;
+        border: 6px solid rgb(22, 98, 124);
+        border-radius: 70% ;
+        border: 6px solid rgb(22, 98, 124);
+        box-shadow: 0px 0px 35px rgb(22, 98, 124) ;
+        position: relative;
+       top: 30px;
+       left: 200px;
+    
+        animation: move 2s infinite;
+        
+    } 
+}
